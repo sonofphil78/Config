@@ -1,0 +1,17 @@
+{
+  "target": "terminus_open",
+
+  "title": "Python Output",
+  "auto_close": false,
+  "timeit": true,
+
+  "post_window_hooks": [
+    ["carry_file_to_pane", {"direction": "right"}]
+  ],
+
+  "shell_cmd": "/home/chris/anaconda3/envs/Python3-8/bin/python3 -u \"$file\"",
+  "file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
+  "selector": "source.python",
+
+  "env": {"PYTHONIOENCODING": "utf-8"},
+}
